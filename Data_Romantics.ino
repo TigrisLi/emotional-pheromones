@@ -30,7 +30,6 @@ int threshold = 550;  // signal data to count as 'heart beat'
 void setup() {
   
   Serial.begin(9600);
-  Serial1.begin(
   
   pinMode(btnExcite, INPUT);
   pinMode(btnHappy, INPUT);
@@ -51,7 +50,7 @@ void setup() {
   // PulseSensor
   pulseSensor.analogInput(pulseSensor1);
   pulseSensor.analogInput(pulseSensor2);
-  pulseSenor.setThreshold(threshold);
+  pulseSensor.setThreshold(threshold);
   
 }
 
